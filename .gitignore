@@ -1,0 +1,14 @@
+# ESP-IDF build
+build/
+sdkconfig
+sdkconfig.old
+managed_components/
+dependencies.lock
+
+# Credenciales privadas (¡nunca subir!)
+main/secrets.h
+
+# Editor / varios
+.vscode/
+*.pyc
+__pycache__/
