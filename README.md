@@ -4,7 +4,7 @@ Reloj de escritorio para **ESP32-C3 SuperMini** con pantalla OLED de 0,91". Sinc
 
 Escrito en C sobre **ESP-IDF v6.1**.
 
-![target](https://img.shields.io/badge/target-ESP32--C3-red) ![framework](https://img.shields.io/badge/framework-ESP--IDF%20v6.1-blue)
+![target](https://img.shields.io/badge/target-ESP32--C3-red) ![framework](https://img.shields.io/badge/framework-ESP--IDF%20v6.1-blue) ![estado](https://img.shields.io/badge/estado-probado%20en%20hardware-brightgreen) ![lenguaje](https://img.shields.io/badge/lenguaje-C-555)
 
 ## Características
 - **Hora por NTP** con exactitud de milisegundos; re-sincroniza cada 5 min y corrige la deriva del cristal.
@@ -37,6 +37,16 @@ idf.py set-target esp32c3
 idf.py build
 idf.py -p COMx flash monitor
 ```
+
+## Probado en hardware
+Funcionando en un **ESP32-C3 SuperMini** con OLED SSD1306 de 0,91":
+- hora sincronizada por NTP con milisegundos y horario de verano de Chile;
+- clima de dos ciudades y pronóstico de lluvia por horas, bajados y leídos en el propio chip;
+- la pantalla sigue fluida mientras la red descarga (tarea FreeRTOS aparte).
+
+## Autor
+Desarrollado por **Francisco Aldunate** — firmware para ESP32 (P4, S3 y C3) en C con ESP-IDF, el framework oficial de Espressif.
+Portafolio: [franciscoaldunate.cl](https://franciscoaldunate.cl) · GitHub: [@franciscoaldun](https://github.com/franciscoaldun)
 
 ## Licencia
 MIT — ver [LICENSE](LICENSE).
