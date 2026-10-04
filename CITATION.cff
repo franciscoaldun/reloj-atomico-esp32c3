@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Reloj atómico ESP32-C3: NTP clock with weather on an OLED"
+abstract: >-
+  NTP clock with millisecond precision plus weather and rain forecast on an ESP32-C3 with an SSD1306 OLED, written in C with ESP-IDF v6.1.
+authors:
+  - family-names: "Aldunate Rodríguez"
+    given-names: "Francisco"
+    email: "franciscoaldun@gmail.com"
+    website: "https://franciscoaldunate.cl"
+    city: "Talca"
+    country: "CL"
+repository-code: "https://github.com/franciscoaldun/reloj-atomico-esp32c3"
+url: "https://franciscoaldunate.cl"
+license: MIT
+version: "1.0"
+date-released: "2026-10-04"
+keywords:
+  - ESP32-C3
+  - NTP
+  - ESP-IDF
+  - OLED
+  - SSD1306
